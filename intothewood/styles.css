@@ -1,0 +1,18 @@
+/* Place your CSS styles in this file */
+
+h1 {
+    text-align: center;
+    font-family: "Berlin Sans FB", sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+}
+
+body {
+    background-color: #FDFAF2;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #000000;
+  /*padding: 20px 10px;*/
+}
