@@ -12,8 +12,34 @@
     </head>
 
     <body>
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            
+            <div class="logo">                
+                <a href="index.html" class="logo" onclick="window.open('index.html', '_self');">Into the Wood</a>
+            </div>     
 
-        <h2>Gymnosperms</h2>
+            <ul class="links">
+                <li><a href="index.html" class="right" onclick="window.open('index.html', '_self');">Home</a></li>
+                <li><a href="topics.html" class="right" onclick="window.open('topics.html', '_self');">Topics</a></li>
+                <li><a href="quizzes.html" class="right" onclick="window.open('quizzes.html', '_self');">Quizzes</a></li>
+                <li><a href="glossary.html" class="right" onclick="window.open('glossary.html', '_self');">Glossary</a></li>
+                <li><a href="credits.html" class="right" onclick="window.open('credits.html', '_self');">Credits</a></li>
+            </ul>
+
+            <label for="nav-toggle" class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>   
+        </nav>
+        
+        
+        <div class="header">
+            <h2>Gymnosperms</h2>
+        </div>
+
+        <div class="pitch">
         <h3>Overview</h3>
         <!--Needs revision-->
         <p>Gymnosperms are seed plants that do not flower. In order 
@@ -58,6 +84,7 @@
                 <li>Secondary cell walls have lignin</li>
                 <li>Brittle</li>
             </ul>
+        </div>
         <h3>Think you're an expert?</h3>
 
         <!-- Load external JavaScript -->
