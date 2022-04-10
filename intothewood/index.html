@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Into the Wood - Home Page</title>
 
@@ -13,15 +14,38 @@
 
     <body>
         
-        <div class="navbar">
-  <a href="index.html" class="logo" onclick="window.open('index.html', '_self');">Into the Wood</a>
-  <a href="topics.html" class="right" onclick="window.open('topics.html', '_self');">Topics</a>
-  <a href="quizzes.html" class="right" onclick="window.open('quizzes.html', '_self');">Quizzes</a>
-  <a href="credits.html" class="right" onclick="window.open('credits.html', '_self');">Credits</a>
-</div>
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            
+            <div class="logo">                
+                <a href="index.html" class="logo" onclick="window.open('index.html', '_self');">Into the Wood</a>
+            </div>     
 
-        <h1>Wood Anatomy Guide</h1>
-        <button class="button button1">Let's go!</button>
+            <ul class="links">
+                <li><a href="index.html" class="right" onclick="window.open('index.html', '_self');">Home</a></li>
+                <li><a href="topics.html" class="right" onclick="window.open('topics.html', '_self');">Topics</a></li>
+                <li><a href="quizzes.html" class="right" onclick="window.open('quizzes.html', '_self');">Quizzes</a></li>
+                <li><a href="glossary.html" class="right" onclick="window.open('glossary.html', '_self');">Glossary</a></li>
+                <li><a href="credits.html" class="right" onclick="window.open('credits.html', '_self');">Credits</a></li>
+            </ul>
+
+            <label for="nav-toggle" class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>   
+        </nav>
+        
+        <div class="header">
+            <!--Add Image Here!-->
+            <h2>Discover. Learn. Interact.</h2>
+            <div class="ready">
+                <button class="button start" >
+                    <a href="topics.html" onclick="window.open('topics.html', '_self');">START</a>
+                </button>
+            </div>
+        </div>
+
         <h3>Why Into the Wood?</h3>
         <p>Into the Wood is a comprehensive, interactive resource for 
             anyone who wishes to learn the foundations of wood anatomy.</p>
@@ -49,11 +73,19 @@
             Each flashcard comes with a photograph, a drawing, as well as 
             a description.</p>
         <hr>
-        <h3>Are you ready?</h3>
+
+        <div class="ready">
+            <h3>Are you ready?</h3>
+            <button class="button start" >
+                <a href="topics.html" onclick="window.open('topics.html', '_self');">
+                    START
+                </a>
+            </button>
+        </div>
         
-        <button class="button button1">Let's go!</button>
-
-
+        <div class="footer">
+            <p>Into the Wood</p>
+        </div>
         <!-- Load external JavaScript -->
         <script src="scripts.js"></script>
         
