@@ -5,8 +5,7 @@ body{
     font-family: Calibri;
   }
 
-
-  nav{
+nav{
     position: fixed;
     z-index: 10;
     left: 0;
@@ -18,7 +17,7 @@ body{
     background-color: #000000;
   }
   
-  nav .logo{
+nav .logo{
     float: left; 
     width: 40%;
     height: 100%;
@@ -30,7 +29,7 @@ body{
     color: #FDFAF2;
     text-decoration: none;
   }
-  nav .links{
+nav .links{
     float: right;
     padding: 0;
     margin: 0;
@@ -41,11 +40,11 @@ body{
     align-items: center;
   }
   
-  nav .links li{
+nav .links li{
     list-style: none;
   }
   
-  nav .links a {
+nav .links a {
     display: block;
     padding: 10pt;
     font-size: 16px;
@@ -55,12 +54,12 @@ body{
     
   }
   
-  #nav-toggle {
+#nav-toggle {
     position: absolute;
     top: -100px;
   }
   
-  nav .hamburger {
+nav .hamburger {
     display: none;
     position: absolute;
     right: 5%;
@@ -68,7 +67,7 @@ body{
     transform: translateY(-50%);
   }
   
-  nav .hamburger .line {
+nav .hamburger .line {
     width: 30px;
     height: 5px;
     background-color:#FDFAF2;
@@ -77,73 +76,60 @@ body{
     transition: all .3s ease-in-out;
   }
   
-  .header {
+.header {
     position: relative;
     padding-top: 100px;
     padding-bottom: 50px;
     align-items: center;
-    text-align: center;
+    text-align: justify;
     color: #FDFAF2;
     background-color: #000000;
   }
-  
-  .header h1 {
+.header h1 {
     font-family: Berlin Sans FB;
   }
-  
-  .header h2 {
+.header h2 {
     font-family: Tw Cen MT;
-  }
-  
-  .button {
-    border: none;
-    width: 60%;
-    padding: 10px 25px;
     text-align: center;
-    font-weight:700;
+  }
+
+.list{overflow: hidden; }
+
+.list ul{
+    list-style: none;
+    text-align:center;
+    
+}
+  
+.list ul li{
+    vertical-align:top;
+    margin: auto 0;
+    
+}
+
+.list ul li a{
     display: inline-block;
-    font-size: 20px;
-    font-family: TW Cen MT, bold;
-    margin: 4px 2px;
-    transition-duration: 0.1s;
-    cursor: pointer;
+    padding:10px 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 30%;
     border-radius: 4px;
-    box-shadow: 3px 4px 8px rgba(0,0,0,0.5);
-  }
-  
-  .button a{
+    background-color: #9FCEC5;
+    /*text*/
+    color: #000000;
+    font-family: calibri;
+    font-weight: 700;
     text-decoration: none;
-    color:#000000;
-  }
-  
-  a:visited{
-    text-decoration: none;
-    color:none;
-  }
-  
-  .start {
-    background-color: #9FCEC5; 
-    color: black;
-  }
-  
-  .start:hover {
-    background-color: #608F86;
+}
+
+.list ul li a:hover{
+    background-color: #608F86; 
     color: #FDFAF2;
-  }
-  
-  .pitch {
-    margin: 15px;
-  }
-  
-  .ready {
-    font-family: Cambria, Bold;
-    font-size: 28px;
-    text-align: center;
-    align-items: center;
-    margin: 20px;
-  }
-  
-  .circles {
+}
+
+
+/*for topics page*/
+.circles {
     background-color: #000000;
     transition: transform .2s;
     padding-top: 20px;
@@ -152,36 +138,36 @@ body{
     height: auto;
     margin: 0 auto;
   }
-  
-  .intro{
+.intro{
     transition: transform .2s;
     margin-left: 20px;
     margin-right: 20px;
   }
-  .intro:hover {
+.intro:hover {
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
   }
   
-  .footer {
+.footer {
     background-color: #000000;
-    margin: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
     height: auto;
     color: #FDFAF2;
+    border-style: solid;
+    border:2px;
+    border-color: #FDFAF2;
   }
   
-  @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
+    /*Navigation Bar*/
     nav .logo{
-      float: none;
+      float: left;
       width: auto;
       justify-content: center;
     }
-  
     nav .links{
       float: none;
       position: fixed;
@@ -216,5 +202,15 @@ body{
     }
     nav :checked ~ .hamburger .line:nth-child(2){
       opacity: 0;
+    }
+  
+    /*Buttons*/
+    .list ul li a{
+        display: inline-block;
+        width: 40%;
+        padding:10px 20px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-right:10%;
     }
   }
