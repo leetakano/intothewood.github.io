@@ -212,10 +212,11 @@ body{
     nav :checked ~ .hamburger .line:nth-child(2){
       opacity: 0;
     }
+    
       
     .list ul li a{
         display: inline-block;
-        width: 40%;
+        width: 60%;
         padding:10px 20px;
         margin-top: 4px;
         margin-bottom: 4px;
