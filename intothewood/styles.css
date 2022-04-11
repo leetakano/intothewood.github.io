@@ -256,8 +256,9 @@ a:visited{
   font-size: 12px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: auto;
+  width: 100%;
   margin-right: 0;
+  text-indent: 8px;
   position: absolute;
   align-items: center;
   top: 100px;
