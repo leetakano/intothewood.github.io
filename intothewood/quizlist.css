@@ -74,19 +74,22 @@ nav .hamburger .line {
   
 .header {
     position: relative;
-    padding-top: 125px;
-    padding-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     align-items: center;
     text-align: justify;
     color: #FDFAF2;
     background-color: #000000;
   }
-
+.header h1 {
+    font-family: Berlin Sans FB;
+  }
 .header h2 {
     font-family: Tw Cen MT;
     text-align: center;
   }
 
+/*.list{overflow: hidden; }*/
 .list{
     text-align:center;
     vertical-align:top;
@@ -115,6 +118,16 @@ nav .hamburger .line {
 }
 
 
+/*for topics page*/
+.circles {
+    background-color: #000000;
+    transition: transform .2s;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
 .intro{
     transition: transform .2s;
     margin-left: 20px;
@@ -137,18 +150,6 @@ nav .hamburger .line {
     border:2px;
     border-color: #FDFAF2;
   }
-  
-.copyright{
-  text-align: center;
-}
-
-.copyright a{
-  text-decoration: none;
-  color:#FDFAF2;
-  font-weight: 700;
-  font-size: 18px;
-}
-
   
 @media screen and (max-width: 768px){
     /*Navigation Bar*/
@@ -200,8 +201,13 @@ nav .hamburger .line {
         padding: 10px 20px;
         margin-top: 10px;
         margin-bottom: 10px;
-        width: 50%;
+        width: 40%;
         border-radius: 4px;
         background-color: #9FCEC5;
+        /*text*/
+        color: #000000;
+        font-family: calibri;
+        font-weight: 700;
+        text-decoration: none;
     }
   }
