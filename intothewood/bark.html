@@ -11,7 +11,7 @@
 
         <style>
 /* Popup container - can be anything you want */
-.popup {
+        .popup {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -19,10 +19,10 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+        }
 
 /* The actual popup */
-.popup .popuptext {
+        .popup .popuptext {
   visibility: hidden;
   width: 160px;
   background-color: #000000;
@@ -35,10 +35,10 @@
   bottom: 125%; /*position of box: from the bottom*/
   left: 50%; /*position of box: from the left*/
   margin-left: -80px;
-}
+        }
 
 /* Popup arrow */
-.popup .popuptext::after {
+        .popup .popuptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -47,32 +47,57 @@
   border-width: 10px;
   border-style: solid;
   border-color: #000000 transparent transparent transparent;
-}
+        }
 
 /* Toggle this class - hide and show the popup */
-.popup .show {
+        .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 0.25s;
   animation: fadeIn 0.25s;
-}
+        }
 
 /* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
+        @-webkit-keyframes fadeIn {
   from {opacity: 0;} 
   to {opacity: 1;}
-}
+        }
 
-@keyframes fadeIn {
+        @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
-}
+        }
 </style>
 
     </head>
 
     <body>
 
-        <h2>Bark</h2>
+      <nav>
+        <input id="nav-toggle" type="checkbox">
+        
+        <div class="logo">                
+            <a href="index.html" class="logo" onclick="window.open('index.html', '_self');">Into the Wood</a>
+        </div>     
+
+        <ul class="links">
+            <li><a href="index.html" class="right" onclick="window.open('index.html', '_self');">Home</a></li>
+            <li><a href="topics.html" class="right" onclick="window.open('topics.html', '_self');">Topics</a></li>
+            <li><a href="quizzes.html" class="right" onclick="window.open('quizzes.html', '_self');">Quizzes</a></li>
+            <li><a href="glossary.html" class="right" onclick="window.open('glossary.html', '_self');">Glossary</a></li>
+            <li><a href="credits.html" class="right" onclick="window.open('credits.html', '_self');">Credits</a></li>
+        </ul>
+
+        <label for="nav-toggle" class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>   
+    </nav>
+        <div class="header2">
+        <h2>Bark</h2></div>
+        
+
+        <div class="maintext">
         <h3>Overview</h3>
         <!--Needs revision-->
         <p>Bark serves two important functions in plants: protection and 
@@ -86,15 +111,27 @@
             exterior to interior, the periderm consists of phellem, phellogen, 
             and phelloderm.</p>
 
-        <div class="popup" onclick="myFunction()">PHELLEM
+        <div class="diagram">
+          <div class="popup" onclick="myFunction()">PHELLEM
             <span class="popuptext" id="myPopup">
-                <center><strong>PHELLEM</strong></center>
+                <strong>PHELLEM</strong>
                 Also known as the cork. It is the outermost layer of the periderm.
             </span>
+          </div>
         </div>
-        <hr>
+      </div>
         
-        <h3>Think you're an expert?</h3>
+      <div class="footer">
+        <div class="copyright">
+            <p>Copyright &copy; 2022 <a href="leetakano.github.io" onclick="window.open('leetakano.github.io', '_self');">
+                LT Studio</a> </p>
+            <p>All rights reserved</p>
+        </div>
+    </div>
+
+    <div class="footer">
+      <p>Into the Wood</p>
+  </div>
 
         <!-- Load external JavaScript -->
         <script src="scripts.js"></script>
