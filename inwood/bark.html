@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Bark</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            
+            <div class="logo">                
+                <a href="index.html" class="logo" onclick="window.open('index.html', '_self');"><img src="images/logo.png"></a>
+            </div>    
+    
+            <ul class="links">
+                <li><a href="index.html" class="right" onclick="window.open('index.html', '_self');">Home</a></li>
+                <li><a href="topics.html" class="right" onclick="window.open('topics.html', '_self');">Topics</a></li>
+                <li><a href="quizzes.html" class="right" onclick="window.open('quizzes.html', '_self');">Quizzes</a></li>
+                <!--<li><a href="glossary.html" class="right" onclick="window.open('glossary.html', '_self');">Glossary</a></li>
+                -->
+                    <li><a href="credits.html" class="right" onclick="window.open('credits.html', '_self');">Credits</a></li>
+            </ul>
+    
+            <label for="nav-toggle" class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>   
+        </nav>
+        <div class="header2">
+        <h2>Bark</h2></div>
+        
+
+        <div class="maintext">
+        <h3>Overview</h3>
+        <!--Needs revision-->
+        <p>Bark serves two important functions in plants: protection and 
+            mechanical support. Some examples of protection include insulation 
+            from the heat and cold, prevention from desiccation, and diversion
+            of insects and other pests.</p>
+        <hr>
+        
+        <h3>Anatomy</h3>
+        <img src="images/barkdiagram.png" style="margin: 10px auto; width: 90%;">
+        <p>The bark is made out of periderm and secondary phloem. In order of 
+            exterior to interior, the periderm consists of phellem, phellogen, 
+            and phelloderm.</p>
+        <p><strong>Phellem</strong><br>
+            Also known as the cork. It is the outermost layer of 
+            the periderm.</p>
+        <p><strong>Phellogen</strong><br>
+            AKA cork cambium. Made up of hollow, cylindrical cells 
+            located around the edge of the stem or root. <br>
+            According to Simpson's <em>Plant Systematics</em>, this layer 
+            undergoes tangential divisions to form phelloderm to the 
+            inside and phellem to the outside.</p> 
+        <p><strong>Phelloderm</strong><br>
+            The innermost layer of the periderm. Found in stems more than roots.</p>
+        <p><strong>Secondary Phloem</strong><br>
+            Simpson's <em>Plant Systematics</em> describes this as "sugar-conducting 
+            tissue produced by the vascular cambium to the outside of a woody stem or root."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ready">
+        <h3>Think you're an expert?</h3>
+        <div class="start" >
+            <a href="barkquiz.html" onclick="window.open('barkquiz.html', '_self');">
+                START</a></div>
+    </div>
+        
+      <div class="footer">
+        <div class="copyright">
+            <p>Copyright &copy; 2022 <a href="leetakano.github.io" onclick="window.open('leetakano.github.io', '_self');">
+                LeeTakano</a> </p>
+            <p>All rights reserved</p>
+        </div>
+    </div>
+
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+
+        <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+        
+    </body>
+
+</html>  

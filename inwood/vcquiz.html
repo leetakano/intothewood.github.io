@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        
+        <div class="logo">                
+            <a href="index.html" class="logo" onclick="window.open('index.html', '_self');"><img src="images/logo.png"></a>
+        </div>     
+
+        <ul class="links">
+            <li><a href="index.html" class="right" onclick="window.open('index.html', '_self');">Home</a></li>
+            <li><a href="topics.html" class="right" onclick="window.open('topics.html', '_self');">Topics</a></li>
+            <li><a href="quizzes.html" class="right" onclick="window.open('quizzes.html', '_self');">Quizzes</a></li>
+            <!--<li><a href="glossary.html" class="right" onclick="window.open('glossary.html', '_self');">Glossary</a></li>
+                -->
+            <li><a href="credits.html" class="right" onclick="window.open('credits.html', '_self');">Credits</a></li>
+        </ul>
+
+        <label for="nav-toggle" class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>   
+    </nav>
+
+    <head>
+        <title>Vascular Cambium Quiz</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mcstyle.css">
+    </head>
+
+    <body>
+
+        <div class="header">
+            <!--Add Image Here!-->
+            <h2>Vascular Cambium Quiz</h2></div>
+
+        <div class="home-box custom-box">
+            <h3>READY?</h3>
+            <!--<p>Number of questions: <span class="total-question"></span></p>-->
+            <button type="button" class="btn" onclick="startQuiz()" style="text-align: center; margin: 0 auto;">START</button>
+        </div>
+
+        <div class="quiz-box custom-box hide">
+            <div class="question-number">
+            </div>
+            <div class="answers-indicator">
+            </div>
+            <div class="question-text">
+            </div>
+            
+            <div class="option-container">
+            </div>
+            <div class="next-question-btn">
+                <button type="button" class="btn" onclick="next()">NEXT</button>
+            </div>
+            
+        </div>
+        <div class="result-box custom-box hide">
+            <h2>Results</h2>
+            <table>
+                <tr>
+                    <td>Questions</td>
+                    <td><span class="total-question"></span></td>
+                </tr>
+                <!--<tr>
+                    <td>Attempt</td>
+                    <td><span class="total-attempt"></span></td>
+                </tr>-->
+                <tr>
+                    <td>Correct</td>
+                    <td><span class="total-correct"></span></td>
+                </tr>
+                <tr>
+                    <td>Wrong</td>
+                    <td><span class="total-wrong"></span></td>
+                </tr>
+                <tr>
+                    <td>Percentage</td>
+                    <td><span class="percentage"></span></td>
+                </tr>
+                <tr>
+                    <td>Score</td>
+                    <td><span class="total-score"></span></td>
+                </tr>
+            </table>
+            <div class="goodjob">
+                <h1>Good Job!</h1>
+                <h3>If not, there's always a next time.</h3>
+            <button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+            <a class="btn" href="vascularcambium.html" onclick="window.open('vascularcambium.html', '_self');" style="text-decoration: none;">Review</a>
+            <a class="btn" href="topics.html" onclick="window.open('topics.html', '_self');" style="text-decoration: none;">Topics</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; 2022 <a href="leetakano.github.io" onclick="window.open('leetakano.github.io', '_self');">
+                    LeeTakano</a> </p>
+                <p>All rights reserved</p>
+            </div>
+        </div>
+
+    <script src="vcquestion.js" type="text/javascript"></script>
+    <script src="mcquiz.js" type="text/javascript"></script>
+    </body>
+</html>

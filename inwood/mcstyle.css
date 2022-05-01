@@ -1,0 +1,469 @@
+body {
+    margin: 0;
+    background-color: #000000;
+    font-family: 'Calibri';
+}
+
+nav{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right:0;
+    top: 0;
+    font-family: Calibri;
+    padding: 0 5%;
+    height: 100px;
+    background-color: #000000;
+  }
+  
+  nav .logo img{
+    float: left;
+    width: 20%;
+    margin: 15px auto;
+    height: 100%;
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FDFAF2;
+    text-decoration: none;
+  }
+nav .links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+nav .links li, nav .links a{
+    list-style: none;
+    display: block;
+    padding: 5pt;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FDFAF2;
+    text-decoration: none;
+  }
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+  }
+nav .hamburger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+nav .hamburger .line {
+    width: 30px;
+    height: 5px;
+    background-color:#FDFAF2;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+  }
+
+.header h2 {
+    font-family: Tw Cen MT;
+    text-align: center;
+}
+.header {
+    position: relative;
+    padding-top: 125px;
+    padding-bottom: 0px;
+    align-items: center;
+    text-align: justify;
+    color: #FDFAF2;
+    background-color: #000000;
+  }
+
+.custom-box{
+    background-color: #000000;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+}
+
+@keyframes fadeInRight{
+    0%{
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.custom-box::before, .custom-box::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.custom-box.hide{
+    display: none;
+}
+
+.home-box {
+    border: 2px groove #FDFAF2;
+    margin: 40px auto;
+
+    padding: 30px;
+    max-width: 700px;
+}
+
+.home-box h3{
+    font-size: 18px;
+    color: #FDFAF2;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.home-box p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 22px;
+    color: #FDFAF2;
+    font-weight: 400;
+}
+
+.home-box p span{
+    font-weight: 500;
+}
+
+.home-box .btn{
+    margin-top: 20px;
+}
+
+a:link, a:visited{
+    text-decoration: none!important;
+  }
+
+.btn{
+    padding: 15px 45px;
+    background-color: #4f756e;
+    color: #FDFAF2;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Calibri';
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.quiz-box {
+    border: 2px groove #FDFAF2;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.quiz-box .question-number, 
+.quiz-box .question-text,
+.quiz-box .option-container,
+.quiz-box .next-question-btn,
+.quiz-box .answers-indicator {
+    width: 100%;
+    float: left;
+}
+
+.quiz-box .question-number{
+    font-size: 18px;
+    color: #FDFAF2;
+    font-weight: 600;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+
+.quiz-box .question-text{
+    font-size: 22px;
+    color: #FDFAF2;
+    line-height: 24px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.quiz-box .option-container .option{
+    background-color: #FDFAF2;
+    padding: 13px 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+.quiz-box .option-container .option.already-answered{
+    pointer-events: none;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.quiz-box .option-container .option.correct::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4f756e;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.quiz-box .option-container .option.wrong::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #b90404;
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+
+.quiz-box .option-container .option.wrong{
+    color:#FDFAF2;
+}
+
+.quiz-box .option-container .option.correct{
+    color: #FDFAF2;
+}
+
+.quiz-box .btn{
+    margin: 15px 0;
+}
+.quiz-box, .answers-indicator{
+    border-top: 1px solid #FDFAF2;
+    border-bottom: 1px solid #FDFAF2;
+}
+.quiz-box .answers-indicator div{
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    background-color: #FDFAF2;
+    border-radius: 50%;
+    margin: 10px 4px 4px 10px;
+
+    
+}
+
+.quiz-box .answers-indicator div.correct{
+    background-color: #4f756e;
+    background-image: url("images/correct.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quiz-box .answers-indicator div.wrong{
+    background-color: #b90404;
+    background-image: url("images/incorrect.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* images should all be about 337px wide */
+.quiz-box .question-text img{
+    max-width: 60%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.quiz-box .btn {
+    font-weight: 700;
+}
+
+.result-box{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    background-color: #000000;
+}
+
+.result-box h2{
+    margin: 0 auto;
+    color: #FDFAF2;
+}
+
+.result-box.hide{
+    display: none;
+}
+
+.result-box table{
+    border-collapse: collapse;
+    margin: 20px auto 70px;
+}
+.result-box table td{
+    border: 1px solid #cccccc;
+    padding:  8px;
+    font-weight: 500;
+    color: #FDFAF2;
+    width: 30%;
+    text-align: left;
+    font-size: 18px;
+}
+
+.result-box, .btn{
+    background-color: #608F86;
+}
+
+.goodjob {
+    background-color: #FDFAF2;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 100%;
+    font-family: 'Cambria';
+}
+
+.goodjob h1{
+    margin: 10px auto;
+}
+
+.goodjob h3{
+    opacity: 0.5;
+    margin-bottom: 40px;
+}
+
+
+.result-box .btn{
+    margin: 0 20px;
+    padding: 15px 0;
+    width: 40%;
+}
+
+.footer {
+    background-color: #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+    height: auto;
+    color: #FDFAF2;
+    border-style: solid;
+    border:2px;
+    border-color: #FDFAF2;
+  }
+
+.topics, a.link, .a:visited {
+    text-decoration: none;
+}
+  
+.copyright{
+  text-align: center;
+}
+
+.copyright a{
+  text-decoration: none;
+  color:#FDFAF2;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@media(max-width: 768px) {
+    /*Navigation Bar*/
+    nav .logo{
+      float: left;
+      width: auto;
+      justify-content: center;
+    }
+    nav .links{
+      float: none;
+      position: fixed;
+      z-index: 9;
+      left: 0;
+      right: 0;
+      top: 100px;
+      bottom: 100%;
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: rgba(0,0,0,.8);
+      backdrop-filter: blur(1em);
+      overflow: hidden;
+      transition: all .5s ease-in-out;
+    }
+    nav .links a{
+      font-size: 20px;
+    }
+    nav :checked ~ .links {
+      bottom: 0;
+    }
+    nav .hamburger, nav .hamburger:hover {
+        display: block;
+        cursor: pointer;
+      }
+    nav :checked ~ .hamburger .line:nth-child(1){
+      transform: translateY(10px) rotate(300deg);
+    }
+    nav :checked ~ .hamburger .line:nth-child(3){
+      transform: translateY(-10px) rotate(-300deg);
+    }
+    nav :checked ~ .hamburger .line:nth-child(2){
+      opacity: 0;
+    }
+
+    .home-box {
+        max-width: 250px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .home-box h3{
+        font-size: 24px;
+        margin: 0 auto 30px;
+        line-height: 25px;
+        text-align: center;
+        font-weight: 700;
+    }
+    .home-box .btn{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 700;
+    }
+
+    .quiz-box {
+        max-width: 250px;
+        margin-bottom: 50px;
+    }
+
+    .result-box {
+        background-color: #000000;
+
+    }
+    .result-box .btn{
+        margin-bottom: 15px;
+    }
+    
+}
