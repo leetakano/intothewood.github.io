@@ -1,4 +1,5 @@
-<h1>This repository contains all of my web development projects!</h1>
+<h1>Welcome!</h1>
+<h2>This repository contains all of my web development projects!</h2>
 
 <a href="leetakano.github.io">My Portfolio</a>
 <br>
