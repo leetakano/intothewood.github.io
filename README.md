@@ -1,2 +1,2 @@
-# leetakano.github.io
-Files that contain a personal static website and other static website projects.
+<a href="leetakano.github.io">Portfolio Website</a>
+<a href="leetakano.github.io/inwood">Learn about Wood Anatomy!</a>
