@@ -1,0 +1,182 @@
+
+
+
+
+body{
+    padding: 0px;
+    margin:0;
+    background-color: #000000;
+    font-family: Calibri;
+  }
+  
+.header {
+    position: relative;
+    margin-top: 100px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: justify;
+    color: #FDFAF2;
+    background-color: #000000;
+  }
+
+.header h2 {
+    font-family: Tw Cen MT;
+    text-align: center;
+  }
+
+/* contains all the buttons */
+.container{
+  /* box-model stuff */
+  margin: 40px auto;
+  width: 55%;
+
+  /* responsive-design (flexbox) */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* buttons that direct to topics */
+.circles{
+    margin: 50px 20px;
+    background-color: #C0C0C0;
+
+    width: 110px; /*w of circle*/
+    height: 110px; /*height of circle*/
+    border-radius: 50%; /*creates the curves*/
+    
+    /*text styling*/
+    transition: transform .2s;
+    position: relative;
+  }
+
+/* Labels */
+  .circles p {
+    font-weight: 700;
+    color:#C0C0C0;
+    line-height: 1.2;
+
+    position: absolute;
+    top: 125px;
+    right: 55px;
+    transform: translate(55%, -55%);
+    margin-bottom: 50px;
+    text-align: center;
+  
+    transition: transform .2s; 
+  }
+
+/* links */
+.circles .a{
+    text-decoration: none;
+}
+
+/* images w/in button */
+.circles img{
+    position: absolute;
+    width: 100px;
+    transform: translate(-50%, -50%);
+}
+
+/* address images and buttons */
+.circles, .img {
+  transition: transform .2s;
+}
+
+
+.circles:hover{
+    background-color:#FDFAF2;
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15); 
+}
+
+/* Not important for now
+.circles img:hover {
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15); 
+}
+*/
+  
+.footer {
+    background-color: #000000;
+    margin-top: 20px;
+    padding: 30px;
+    height: auto;
+    color: #FDFAF2;
+    border-style: solid;
+    border:2px;
+    border-color: #FDFAF2;
+  }
+
+.copyright{
+  text-align: center;
+}
+
+.copyright a{
+  text-decoration: none;
+  color:#FDFAF2;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* Mobile View*/
+@media screen and (max-width: 768px){
+    /*Navigation Bar*/
+    nav .logo{
+      float: left;
+      width: auto;
+      justify-content: center;
+    }
+    nav .links{
+      float: none;
+      position: fixed;
+      z-index: 9;
+      left: 0;
+      right: 0;
+      top: 100px;
+      bottom: 100%;
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: rgba(0,0,0,.8);
+      backdrop-filter: blur(1em);
+      overflow: hidden;
+      transition: all .5s ease-in-out;
+    }
+    nav .links a{
+      font-size: 20px;
+    }
+    nav :checked ~ .links {
+      bottom: 0;
+    }
+    nav .hamburger, nav .hamburger:hover {
+        display: block;
+        cursor: pointer;
+      }
+    nav :checked ~ .hamburger .line:nth-child(1){
+      transform: translateY(10px) rotate(300deg);
+    }
+    nav :checked ~ .hamburger .line:nth-child(3){
+      transform: translateY(-10px) rotate(-300deg);
+    }
+    nav :checked ~ .hamburger .line:nth-child(2){
+      opacity: 0;
+    }
+
+.container{
+  /* box-model stuff 
+  margin: 0px 50px;
+  padding: 0 0; */
+
+  /* responsive-design (flexbox) */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+}
