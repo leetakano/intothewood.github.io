@@ -12,24 +12,47 @@
 
 <body>
   <nav>
+    <input id="nav-toggle" type="checkbox">
     <div class="nav-inner">
-      <a href="index.html" class="logo"><img src="images/logo.png" width="45px"></a>
-      <a href="index.html">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact Me</a>
-      <a href="">Resume</a>
+      <a href="index.html" class="logo"><img src="images/logo.png"></a>
+      <ul class="links">
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="#about"><span>About Me</span></a></li>
+        <li><a href="#projects"><span>Projects</span></a></li>
+        <li><a href="#contact"><span>Contact Me</span></a></li>
+        <li><a href="#resume"><span>Resume</span></a></li>
+      </ul>
     </div>
+
+    <label for="nav-toggle" class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
   </nav>
 
 
   <header>
     <!--cursor animation here-->
     <h2 id="main">Hello, World!</h2>
-    <h1 id="main">
-      I'M GRACE
+    <h3>
+      My name is</h3>
+    <h1 class="waviy">
+      <span>-----</span>GGGGGGG<br>
+      <span>----</span>GG<span>----</span>GG<span>-</span><br>
+      <span>---</span>GG<span>--------</span> RR RRRRRR<span>---</span>AAAAA<span>----</span> CCCCCC
+      <span>---</span>EEEEEE<br>
+      <span>--</span>GG<span>--------</span> RR RR<span>-----</span> AA<span>-----</span>AA<span>-</span>
+      CC<span>---</span>CC<span>--</span>
+      EE<span>----</span>EE<br>
+      <span>-</span>GG<span>--</span>GGGGG<span>-</span> RR<span>--------</span> AA<span>-----</span>AA<span>-</span>
+      CC<span>-------</span> EEEEEEEE<br>
+      GG<span>-----</span>GG<span>--</span>RR<span>--------</span> AA<span>-----</span>AA<span>-</span>
+      CC<span>----</span>CC<span>-</span> EE<br>
+      GGGGGGG <span>--</span>RR<span>---------</span> AAAA<span>--</span>AA<span>--</span> CCCCCCC
+      <span>--</span>EEEEEEE<br>
     </h1>
-    <h2>Aspiring Mainframe Engineer</h2>
+    <h3 class="mobile">Mainframe Program Analyst</h3>
   </header>
 
   <main>
@@ -99,6 +122,10 @@
       </ul>
     </section>
 
+    <section id="Resume" class="rolling-box">
+      <h2>Resume</h2>
+    </section>
+
     <section id="projects" class="rolling-box">
       <h2>Projects</h2>
       <article>
@@ -115,7 +142,9 @@
           University students taking ISU BIOL 454, Plant Anatomy. The website includes 9 pages and as well as 7 quizzes
           for students to use as study materials. The project came in 2 phases: UI/UX and Web Development.
         </p>
-        <h4><a href="https://xd.adobe.com/view/8c63bbf9-29cc-4d5a-af77-9ab1eff0f2b9-d930/?fullscreen">UI/UX</a></h4>
+        <p><strong><a
+              href="https://xd.adobe.com/view/8c63bbf9-29cc-4d5a-af77-9ab1eff0f2b9-d930/?fullscreen">UI/UX</a></strong>
+        </p>
         <img src="images/inwood-prototype.png" alt="inWOOD Prototype">
       </article>
 
