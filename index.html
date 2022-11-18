@@ -7,7 +7,10 @@
   <link rel="icon" type="image/x-icon" href="images/logo.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
   <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -21,7 +24,7 @@
       <li><a href="#about"><span>About Me</span></a></li>
       <li><a href="#projects"><span>Projects</span></a></li>
       <li><a href="#contact"><span>Contact Me</span></a></li>
-      <!--<li><a href="#resume"><span>Resume</span></a></li>-->
+      <li><a href="#resume"><span>Resume</span></a></li>
     </ul>
     <label for="nav-toggle" class="hamburger">
       <div class="line"></div>
@@ -131,7 +134,13 @@
       <h2>Projects</h2>
       <article>
         <h3>Per Scholas Capstone Project</h3>
-        <p>TBD</p>
+        <!-- download project pdf somewhere here -->
+        <div class="carousel">
+          <div class="carousel-cell"><img src="images/0001.jpg"></div>
+          <div class="carousel-cell"><img src="images/0002.jpg"></div>
+          <div class="carousel-cell"><img src="images/0003.jpg"></div>
+
+        </div>
       </article>
       <article>
         <h3><a href="https://leetakano.github.io/inwood/">inWOOD</a></h3>
@@ -180,7 +189,7 @@
         <textarea name="message" rows=5 placeholder="MESSAGE"></textarea>
         </label>
         <!-- your other form fields go here -->
-        <button type="submit">Send</button>
+        <button type="submit">SEND</button>
       </form>
     </section>
   </main>
@@ -195,6 +204,10 @@
       <p>All Rights Reserved</p>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="script.js"></script>
+
 
 </body>
 
