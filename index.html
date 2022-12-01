@@ -18,7 +18,9 @@
     <div class="nav-inner">
       <input id="nav-toggle" type="checkbox">
       <a href="index.html" class="logo">
-        <img src="images/logo.png"></a>
+        <img src="images/logo.png">
+        <span>Grace Lee</span>
+      </a>
 
       <ul class="links">
         <li><a href="index.html"><span>Home</span></a></li>
@@ -115,103 +117,153 @@
     </section>
 
     <section id="projects" class="rolling-box">
+      <!--Create an accordion for easier navigation-->
       <h2>Projects</h2>
-      <article>
-        <h3>Per Scholas Capstone Project</h3>
-        <!--download link-->
-        <a href="images/per-scholas_capstone.pdf">Download PDF</a>
-        <div class="carousel">
-          <div class="carousel-cell"><img src="images/0001.jpg"></div>
-          <div class="carousel-cell"><img src="images/0002.jpg"></div>
-          <div class="carousel-cell"><img src="images/0003.jpg"></div>
-          <div class="carousel-cell"><img src="images/0004.jpg"></div>
-          <div class="carousel-cell"><img src="images/0005.jpg"></div>
-          <div class="carousel-cell"><img src="images/0006.jpg"></div>
-          <div class="carousel-cell"><img src="images/0007.jpg"></div>
-          <div class="carousel-cell"><img src="images/0008.jpg"></div>
-          <div class="carousel-cell"><img src="images/0009.jpg"></div>
-          <div class="carousel-cell"><img src="images/0010.jpg"></div>
-          <div class="carousel-cell"><img src="images/0011.jpg"></div>
-          <div class="carousel-cell"><img src="images/0012.jpg"></div>
-          <div class="carousel-cell"><img src="images/0013.jpg"></div>
-          <div class="carousel-cell"><img src="images/0014.jpg"></div>
-          <div class="carousel-cell"><img src="images/0015.jpg"></div>
-          <div class="carousel-cell"><img src="images/0016.jpg"></div>
-          <div class="carousel-cell"><img src="images/0017.jpg"></div>
-          <div class="carousel-cell"><img src="images/0018.jpg"></div>
-          <div class="carousel-cell"><img src="images/0019.jpg"></div>
-          <div class="carousel-cell"><img src="images/0020.jpg"></div>
-          <div class="carousel-cell"><img src="images/0021.jpg"></div>
-          <div class="carousel-cell"><img src="images/0022.jpg"></div>
 
+      <article class="accordion-item">
+        <button class="accordion">
+          <h3>Per Scholas Capstone Project</h3>
+        </button>
+        <div class="panel">
+          <a href="images/per-scholas_capstone.pdf">Download PDF</a>
+          <div class="carousel">
+            <div class="carousel-cell"><img src="images/0001.jpg"></div>
+            <div class="carousel-cell"><img src="images/0002.jpg"></div>
+            <div class="carousel-cell"><img src="images/0003.jpg"></div>
+            <div class="carousel-cell"><img src="images/0004.jpg"></div>
+            <div class="carousel-cell"><img src="images/0005.jpg"></div>
+            <div class="carousel-cell"><img src="images/0006.jpg"></div>
+            <div class="carousel-cell"><img src="images/0007.jpg"></div>
+            <div class="carousel-cell"><img src="images/0008.jpg"></div>
+            <div class="carousel-cell"><img src="images/0009.jpg"></div>
+            <div class="carousel-cell"><img src="images/0010.jpg"></div>
+            <div class="carousel-cell"><img src="images/0011.jpg"></div>
+            <div class="carousel-cell"><img src="images/0012.jpg"></div>
+            <div class="carousel-cell"><img src="images/0013.jpg"></div>
+            <div class="carousel-cell"><img src="images/0014.jpg"></div>
+            <div class="carousel-cell"><img src="images/0015.jpg"></div>
+            <div class="carousel-cell"><img src="images/0016.jpg"></div>
+            <div class="carousel-cell"><img src="images/0017.jpg"></div>
+            <div class="carousel-cell"><img src="images/0018.jpg"></div>
+            <div class="carousel-cell"><img src="images/0019.jpg"></div>
+            <div class="carousel-cell"><img src="images/0020.jpg"></div>
+            <div class="carousel-cell"><img src="images/0021.jpg"></div>
+            <div class="carousel-cell"><img src="images/0022.jpg"></div>
+          </div>
+          <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+          </select>
         </div>
-        <select>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
-          <option>11</option>
-          <option>12</option>
-          <option>13</option>
-          <option>14</option>
-          <option>15</option>
-          <option>16</option>
-          <option>17</option>
-          <option>18</option>
-          <option>19</option>
-          <option>20</option>
-          <option>21</option>
-          <option>22</option>
-        </select>
-      </article>
-      <article>
-        <h3><a href="https://leetakano.github.io/inwood/">inWOOD</a></h3>
-
-        <h4>January 2022 - Present </h4>
-
-        <p>
-          inWOOD is a static website that teaches the basics of wood anatomy. Its target audience is Iowa State
-          University students taking ISU BIOL 454, Plant Anatomy. The website includes 9 pages and as well as 7 quizzes
-          for students to use as study materials. The project came in 2 phases: UI/UX and Web Development.
-        </p>
-        <p><strong><a
-              href="https://xd.adobe.com/view/8c63bbf9-29cc-4d5a-af77-9ab1eff0f2b9-d930/?fullscreen">UI/UX</a></strong>
-        </p>
-        <img src="images/inwood-prototype.png" alt="inWOOD Prototype">
       </article>
 
-      <article>
-        <h3>Pet Types in US Households (2019-2020)</h3>
-        <h4>December 2020</h4>
-        <img src="images/pet-treemap_fall-2020.png" alt="Pet Types in US Households (2019-2020)">
-        <p>
-          Interactive data visualization project that shows the diversity of pets within the US between 2019-2020.
+      <article class="accordion-item">
+        <button class="accordion">
+          <h3>inWOOD</h3>
+        </button>
+        <div class="panel">
+          <h4>January 2022 - Present </h4>
+          <p>
+            <a href="https://leetakano.github.io/inwood/">inWOOD</a> is a static website that teaches the basics of wood
+            anatomy. Its target audience is Iowa State
+            University students taking ISU BIOL 454, Plant Anatomy. The website includes 9 pages and 7 quizzes; complete
+            with original illustrations and photographs done by me. inWOOD's purpose is to provide a resource
+            for students as study material. The project came in 2 phases: UI/UX and Web Development.
+          </p>
+          <p>
+            <strong>
+              <a href="https://xd.adobe.com/view/8c63bbf9-29cc-4d5a-af77-9ab1eff0f2b9-d930/?fullscreen">UI/UX</a>
+            </strong>
+          </p>
+          <div class="container">
+            <div class="img-wrap"><img src="images/inwood-prototype.png" alt="inWOOD UI/UX Prototype"></div>
+            <div class="wrap-around">
+              <p>Dimensions: 1920x1080p</p>
+              <p>Materials: Procreate, Adobe XD</p>
+              <p>Reference: Simpson’s Plant Systematics</p>
+              <p>
+                Originally, the project was called "Into the Wood" and the prototype was created using Adobe XD. For the
+                design layout, I took inspiration from other education-oriented websites such as Khan Academy, Udemy,
+                Coursera, and Duolingo.</p>
+              <p>
+                This
+                phase was completed within a month before moving on to the second phase: web development.
+              </p>
 
-          Created using Processing3 and the treeMappa
-        </p>
+            </div>
+          </div>
+        </div>
       </article>
 
-      <article>
-        <h3>Opioid Overdose Deaths in the US (2000-2017)</h3>
-        <h4>October 2020</h4>
-        <img src="images/opioid-overdose.png" alt="Opioid Overdose" width="100%">
+      <article class="accordion-item">
+        <button class="accordion">
+          <h3>Pet Types in US Households (2019-2020)</h3>
+        </button>
+        <div class="panel">
+          <h4>December 2020</h4>
+          <div class="container">
+            <div class="img-wrap"><img src="images/pet-treemap_fall-2020.png"
+                alt="Pet Types in US Households (2019-2020)"></div>
+            <div class="wrap-around">
+              <p>Dimensions: 960x960p</p>
+              <p>Materials: Processing 3, TreeMappa (plugin)</p>
+              <p>Data: American Pet Products, “National Pet Owners Survey”</p>
+              <p>
+                When designing this project, I developed two different treemaps. One classifies pets by “leaf” and the
+                other by “branch.” Treemaps are great for this type of data because it is easier to take in all the
+                information at once compared to pie and bar charts.
+              </p>
+              <p>
+                Created using Processing3 and treeMappa
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
 
-        <p>
-          Data Visualization using Processing3
-        </p>
+      <article class="accordion-item">
+        <button class="accordion">
+          <h3>Opioid Overdose Deaths in the US (2000-2017)</h3>
+        </button>
+        <div class="panel">
+          <h4>October 2020</h4>
+          <div class="container">
+            <div class="img-wrap">
+              <img src="images/opioid-overdose.png" alt="Opioid Overdose" width="100%">
+            </div>
+            <div class="wrap-around">
+              <p>
+                Data Visualization using Processing3
+              </p>
+            </div>
+          </div>
+        </div>
       </article>
     </section>
 
     <section id="contact" class="rolling-box">
       <h2>Contact Me</h2>
       <div class="container">
-
         <div class="img-wrap">
           <img src="images/potato-the-roach.png" alt="Potato the Roach">
         </div>
@@ -241,8 +293,9 @@
       <!--add your logo here-->
       <!--github icon-->
       <a href="https://github.com/leetakano">Github</a>
-      <!--linkedin icon-->
-      <a href="https://www.linkedin.com/in/leetakano/">LinkedIn</a>
+
+      <a href="https://www.linkedin.com/in/leetakano/"><img src="images/linkedin-logo.png"
+          width="40px"><span>LinkedIn</span></a>
       <p>© Grace Lee 2022</p>
       <p>All Rights Reserved</p>
     </div>
