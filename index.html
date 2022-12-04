@@ -42,24 +42,35 @@
   <header>
     <!--cursor animation here-->
     <h2 id="main">Hello, World!</h2>
-    <h3>
-      My name is</h3>
+    <h3>My name is</h3>
     <h1>
       <div class="screen-reader">Grace</div>
       <div aria-hidden="true">
-        <span>-----</span>GGGGGGG<br>
-        <span>----</span>GG<span>----</span>GG<span>-</span><br>
-        <span>---</span>GG<span>--------</span> RR RRRRRR<span>---</span>AAAAA<span>----</span> CCCCCC
-        <span>---</span>EEEEEE<br>
-        <span>--</span>GG<span>--------</span> RR RR<span>-----</span> AA<span>-----</span>AA<span>-</span>
-        CC<span>---</span>CC<span>--</span>
-        EE<span>----</span>EE<br>
-        <span>-</span>GG<span>--</span>GGGGG<span>-</span> RR<span>--------</span> AA<span>-----</span>AA<span>-</span>
-        CC<span>-------</span> EEEEEEEE<br>
-        GG<span>-----</span>GG<span>--</span>RR<span>--------</span> AA<span>-----</span>AA<span>-</span>
-        CC<span>----</span>CC<span>-</span> EE<br>
-        GGGGGGG <span>--</span>RR<span>---------</span> AAAA<span>--</span>AA<span>--</span> CCCCCCC
-        <span>--</span>EEEEEEE<br>
+        <span class="dash">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>GGGGGGG<br>
+        <span class="dash">&nbsp;&nbsp;&nbsp;&nbsp;</span>GG<span class="dash">&nbsp;&nbsp;&nbsp;&nbsp;</span>GG<br>
+        <span class="dash">&nbsp;&nbsp;&nbsp;</span>GG<span
+          class="dash">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> RR
+        RRRRRR<span class="dash">&nbsp;&nbsp;&nbsp;</span>AAAAA<span class="dash">&nbsp;&nbsp;&nbsp;&nbsp;</span> CCCCCC
+        <span class="dash">&nbsp;&nbsp;&nbsp;</span>EEEEEE<br>
+        <span class="dash">&nbsp;&nbsp;</span>GG<span
+          class="dash">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> RR RR<span
+          class="dash">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        AA<span class="dash">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>AA<span class="dash">&nbsp;</span>
+        CC<span class="dash">&nbsp;&nbsp;&nbsp;</span>CC<span class="dash">&nbsp;&nbsp;</span>
+        EE<span class="dash">&nbsp;&nbsp;&nbsp;&nbsp;</span>EE<br>
+        <span class="dash">&nbsp;</span>GG<span class="dash">&nbsp;&nbsp;</span>GGGGG<span class="dash">&nbsp;</span>
+        RR<span class="dash">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        AA<span class="dash">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>AA<span class="dash">&nbsp;</span>
+        CC<span class="dash">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> EEEEEEEE<br>
+        GG<span class="dash">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>GG<span class="dash">&nbsp;&nbsp;</span>RR<span
+          class="dash">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        AA<span class="dash">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>AA<span class="dash">&nbsp;</span>
+        CC<span class="dash">&nbsp;&nbsp;&nbsp;&nbsp;</span>CC<span class="dash">&nbsp;</span> EE<br>
+        GGGGGGG <span class="dash">&nbsp;&nbsp;</span>RR<span
+          class="dash">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> AAAA<span
+          class="dash">&nbsp;&nbsp;</span>AA<span class="dash">&nbsp;&nbsp;</span>
+        CCCCCCC
+        <span class="dash">&nbsp;&nbsp;</span>EEEEEEE<br>
       </div>
     </h1>
     <h3 class="mobile">Mainframe Program Analyst</h3>
@@ -126,9 +137,9 @@
         </button>
         <div class="panel">
           <h4>November 2022</h4>
+          <a href="images/per-scholas_capstone.pdf">Download PDF</a>
 
           <div class="container">
-            <a href="images/per-scholas_capstone.pdf">Download PDF</a>
             <div class="img-wrap">
               <div class="carousel">
                 <div class="carousel-cell"><img src="images/0001.jpg"></div>
@@ -185,7 +196,6 @@
                 information at once compared to pie and bar charts.</p>
             </div>
           </div>
-
         </div>
       </article>
 
@@ -229,7 +239,7 @@
 
       <article class="accordion-item">
         <button class="accordion">
-          <h3>Pet Types in US Households (2019-2020)</h3>
+          <h3>Pet Types in US Households</h3>
         </button>
         <div class="panel">
           <h4>December 2020</h4>
@@ -255,7 +265,7 @@
 
       <article class="accordion-item">
         <button class="accordion">
-          <h3>Opioid Overdose Deaths in the US (2000-2017)</h3>
+          <h3>Opioid Overdose Deaths in the US</h3>
         </button>
         <div class="panel">
           <h4>October 2020</h4>
@@ -277,9 +287,6 @@
       <h2>Contact Me</h2>
       <div class="container">
         <div class="img-wrap">
-          <img src="images/potato-the-roach.png" alt="Potato the Roach">
-        </div>
-        <div class="wrap-around">
           <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/maykplvw"
             method="post">
             <fieldset id="fs-frm-inputs">
@@ -290,6 +297,9 @@
             </fieldset>
             <button type="submit">SUBMIT</button>
           </form>
+        </div>
+        <div class="wrap-around">
+          <img src="images/potato-the-roach.png" alt="Potato the Roach">
         </div>
       </div>
 
@@ -304,10 +314,9 @@
     <div class="footer-inner">
       <!--add your logo here-->
       <!--github icon-->
-      <a href="https://github.com/leetakano">Github</a>
-
+      <a href="https://github.com/leetakano"><img src="images/github.png"><span>Github</span></a>
       <a href="https://www.linkedin.com/in/leetakano/"><img src="images/linkedin-logo.png"
-          width="40px"><span>LinkedIn</span></a>
+          width="32px"><span>LinkedIn</span></a>
       <p>© Grace Lee 2022</p>
       <p>All Rights Reserved</p>
     </div>

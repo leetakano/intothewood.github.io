@@ -122,8 +122,12 @@ header h1 {
   color: #ffffff;
 }
 
-header h1 span {
-  color: #1B1C1E
+header h1 span.dash {
+  color: #1B1C1E;
+}
+
+header h1:hover {
+  text-shadow: 0 0 3px #FF0000;
 }
 
 p {
@@ -204,6 +208,10 @@ main .rolling-box {
   padding-top: 60px;
 }
 
+select {
+  margin-top: 10px;
+}
+
 .accordion {
   background-color: #383838;
   color: white;
@@ -254,11 +262,6 @@ main .rolling-box {
 
 .carousel img {
   margin: 10px;
-}
-
-#contact h2 {
-  display: flex;
-  justify-content: center;
 }
 
 #contact button {
@@ -350,11 +353,14 @@ footer {
   text-align: center;
   background-color: #383838;
   margin-top: 20px;
+  color: #ffffff;
 }
 
 footer a img,
 footer a span {
+  display: inline-block;
   vertical-align: middle;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 1040px) {
@@ -475,24 +481,26 @@ footer a span {
   }
 
   header h2 {
-    color: rgb(255, 133, 153);
+    color: rgb(21, 34, 175);
   }
 
   header h1 {
     color: black;
   }
 
-  header h1 span {
+  header h1 span.dash {
     color: #ffffff;
   }
 
   header h3,
   main h2 {
-    color: rgb(55, 196, 181);
+    color: rgb(15, 161, 24);
   }
 
-  main a {
-    color: rgb(104, 104, 0);
+  main a,
+  main a:visited {
+    color: rgb(23, 114, 171);
+    text-decoration-color: rgb(23, 114, 171);
   }
 
   .flickity-page-dots .dot {

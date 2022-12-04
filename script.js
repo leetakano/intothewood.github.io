@@ -1,4 +1,7 @@
 
+
+
+
 // for carousel
 var flky = new Flickity('.carousel', {
     groupCells: false,
@@ -16,12 +19,12 @@ select.addEventListener('change', function (event) {
     flky.select(event.target.value - 1)
 });
 
-var acc = document.getElementsByClassName("accordion-item");
+var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function (event) {
-        event.currentTarget.classList.toggle("active");
+        event.currentTarget.closest(".accordion-item").classList.toggle("active");
         var panel = this.nextElementSibling;
         console.log(event.target)
         // if (panel.style.maxHeight) {
